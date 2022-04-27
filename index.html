@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Project</title>
+
+    <style>
+        @font-face {
+            font-family: secrcode;
+            src: url(secrcode.ttf);
+        }
+
+
+::-webkit-scrollbar {
+  width: 0;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff; 
+  border-radius: 10px;
+}
+
+   .nav-item {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem
+   }
+
+   .navbar-brand {
+       font-size: 2.7rem;
+       letter-spacing: 6px!important;
+       font-family: 'Lato', sans-serif;
+   }
+
+   .nav-link:hover {
+       color: #ffdb6e !important;
+   }
+
+   .navbar-toggler .fa-solid {
+       color: black !important;
+       font-size: 25px;
+   }
+
+   .navbar-toggler:checked {
+       outline: 0 !important;
+       border: 0 !important;
+   }
+
+   .list-item .text-decoration-none {
+       font-size: 3rem;
+       padding: 1px;
+       display: inline-block;
+       margin: 25px 0 15px 25px;
+       font-family: 'Libre Bodoni', serif;
+       color: black;
+
+    }
+
+    .container-fluid {
+      margin-top: 80px !important;
+    }
+
+    .card-title {
+        font-size: 4.5rem !important;
+        font-weight: bolder;
+        /* line-height: 75px !important; */
+        padding: 0 !important;
+    }
+
+    .card-img-bottom {
+        width: 615px;
+        height: 310px;
+        /* object-fit: 310px; */
+    }
+
+    .ms-5 {
+        margin-left: 140px !important;
+    }
+    .social-media {
+        margin-top: 140px;
+    }
+
+    .social-media .text-decoration-none {
+        color: black;
+        font-family: 'Radio Canada', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        margin-right: 35px !important;
+        
+    }
+
+    .text-white {
+        font-family: 'Radio Canada', sans-serif;
+    }
+
+    .text-muted {
+        font-family: 'Open Sans', sans-serif;
+    }
+    .w-75 {
+        margin-top: 200px !important;
+    }
+    .ctn {
+        margin-top: 55px !important;
+    }
+    .end {
+        margin-top: 87px;
+        font-size: 14px !important;
+    }
+
+    .end h1 {
+        font-family: 'Open Sans', sans-serif;
+    }
+    @media screen and (max-width: 768px) {
+            .card-title  {
+                font-size: 4rem !important;
+            }
+            .ms-5  {
+                margin-left: 60px !important;
+            }
+            .card-img-bottom {
+                width: 400px;
+                height: 220px ;
+            }
+    }
+
+    @media screen and (max-width: 426px) {
+        .card-title  {
+                font-size: 2.8rem !important;
+            }
+            .ms-5  {
+                margin-left: 0 !important;
+            }
+            .card-img-bottom {
+                width: 320px;
+                height: 180px ;
+            }
+    }
+
+   @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+    </style>
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-expand-md mt-2">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse">
+                <i class="fa-solid fa-bars"></i>
+             </button>
+            <div id="collapse" class="collapse navbar-collapse justify-content-between">
+                <a href="" class="navbar-brand text-black order-2">Logo</a>
+                <ul class="navbar-nav order-1">
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-black me-3">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-black ">Most Popular</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav order-3">
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-black me-5">My Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-black me-5">My Card</a>
+                    </li>
+                    <button class="btn btn-outline-dark d-block">
+                        <i class="fa-solid fa-magnifying-glass p-1 fs-4"></i>
+                    </button>
+                </ul>
+    
+             </div>
+         
+
+
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1 d-none d-lg-block bg-transparent">
+                <ul class="list-unstyled">
+                    <li class="list-item">
+                        <a href="" class="text-decoration-none">01</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="" class="text-decoration-none text-muted">02</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="" class="text-decoration-none text-muted">03</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="" class="text-decoration-none text-muted">04</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-8 bg-transparent">
+                <div class="card bg-transparent border-0 ms-5">
+                    <p class="text-muted font-monospace fs-4">20 January * Blog</p>
+                    <h2 class="card-title w-50 display-1">We crate a modern beatiful photo.</h2>
+                    <img src="image.jpg" class="card-img-bottom mt-5 mb-5 d-block" alt="">
+                    <div class="social-media mb-5 d-none d-md-block">
+                        <a href="" class="text-decoration-none me-3">Facebook</a>
+                        <a href="" class="text-decoration-none me-3">Twitter</a>
+                        <a href="" class="text-decoration-none">instagram</a>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-xl-3 bg-transparent">
+                <div class="container w-75 mt-5">
+                    <h1 class="text-black mb-4 fs-2">Air Drone</h1>
+                    <p class="text-muted fs-5 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         In saepe perferendis temporibus accusantium rem magni.</p>
+                </div>
+                <div class="container ctn w-75">
+                    <h1 class="text-black mb-4 fs-2">Knowlodge</h1>
+                    <p class="text-muted fs-5 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         In saepe perferendis temporibus accusantium rem magni.</p>
+                         <div class="end">
+                            <h1 class="text-black fs-4">Send your inquiry</h1>
+                        </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
